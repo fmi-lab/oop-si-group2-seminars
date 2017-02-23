@@ -30,3 +30,6 @@
 ### Глобално (курс): TBD
 
 ## Помощни материали
+
+* [C++ Programming Style Guidelines](http://geosoft.no/development/cppstyle.html)
+
