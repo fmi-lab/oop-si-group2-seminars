@@ -47,9 +47,10 @@
   по-голяма дължина от `destination`, то се стига до [buffer overflow
   ](https://en.wikipedia.org/wiki/Buffer_overflow), а оттам програмата ви може
   да има сериозни уязвимости ([A Look at the Buffer-Overflow
-  Hack](http://www.linuxjournal.com/article/2902));
+  Hack](http://www.linuxjournal.com/article/2902), [Exploit Tutorial: Buffer
+  Overflow](https://www.reddit.com/r/hacking/comments/1wy610/exploit_tutorial_buffer_overflow/));
 * `strncpy(destination, source, size)` е по-сигурният начин за копиране на
-  масиви от символи, тук вече има допълнителен параметър - броят на символите 
+  масиви от символи, тук вече има допълнителен параметър - броят на символите
   които искаме да копираме от `source` в `destination`.
   Отново трябва да се внимава обаче, защото в определени случаи може
   терминиращата нула (`\0`) за край на низа да не бъде копирана и тогава ще
