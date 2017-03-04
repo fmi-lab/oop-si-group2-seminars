@@ -127,8 +127,7 @@ char name[10] = "Farah";
 int newNameSize = sizeof(name);
 char* newName = new char[newNameSize];
 
-if (newNameSize > 0)
-{
+if (newNameSize > 0) {
     newName[0] = '\0';
     strncat(newName, "Lydia", newNameSize - 1);
 }
@@ -146,8 +145,7 @@ delete[] newName; // Грижим се да освободим паметта о
 *Пример:*
 ```cpp
 char name[10] = "Patrick";
-for (int i = 0; i < 10; i++)
-{
+for (int i = 0; i < 10; i++) {
     std::cout << *(name + i); // *(name + i) е еквивалентно на name[i]
 }
 std::cout << std::endl; // Ще се изпечата "Patrick" на екрана
@@ -175,19 +173,16 @@ wrapping структура и всъщност чрез нея да подмя�
 *Пример:*
 ```cpp
 template <typename T>
-struct ArrayWrapper
-{
+struct ArrayWrapper {
     T array[10];
 }
 
 template <typename T>
-int getSizeOfArray(const ArrayWrapper<T>& myArray) const
-{
+int getSizeOfArray(const ArrayWrapper<T>& myArray) const {
     return sizeof((*myArray).array) / sizeof(*myArray).array[0]);
 }
 
-int main()
-{
+int main() {
     ArrayWrapper<int> myArrayWrapper;
     std::cout << getSizeOfArray(myArrayWrapper) << std::endl; // Ще изведе на екрана 10
     return 0;
@@ -289,12 +284,12 @@ CamelCase (т.е. започва се с главна буква и ако им�
 *Пример:* 
 
 ```cpp
-struct 2DPoint { 
+struct Point2D { 
     double x;
     double y;
  };
 
-2DPoint point = {0, 0};
+Point2D point = {0, 0};
 ```
 
 То, в такъв случай `std::cout << "(" << point.x << ", " << point.y << ")" <<
@@ -324,7 +319,7 @@ Schreiner](https://www.cs.rit.edu/~ats/books/ooc.pdf)), но тъй като с�
 ```cpp 
 struct Circle { 
     double radius; 
-    2DPoint center;
+    Point2D center;
 };
 ```
 
@@ -360,7 +355,7 @@ struct Person {
 *Пример:* 
 
 ```cpp
-2Dpoint point;
+Point2D point;
 ```
 
 Полетата в структурата могат да се инициализират по два начина, един път още с
@@ -369,11 +364,11 @@ struct Person {
 *Пример:*
 
 ```cpp
-2DPoint point = {0, 0};
+Point2D point = {0, 0};
 ```
 или
 ```cpp
-2DPoint point;
+Point2D point;
 point.x = 0;
 point.y = 0;
 ```
@@ -413,10 +408,9 @@ overflow](https://en.wikipedia.org/wiki/Buffer_overflow).
 
 ```cpp
 char name[20] = "";
-while(std::cin.getline(name, sizeof(name))) // със cin.getline() автоматично се добавя
-                                            // символа за край на ред '\0', така че не 
-                                            // е нужно да се притесняваме за това
-{
+while (std::cin.getline(name, sizeof(name))) { // със cin.getline() автоматично се добавя
+                                               // символа за край на ред '\0', така че не 
+                                               // е нужно да се притесняваме за това
     std::cout << name << std::endl;
 }
 ```
@@ -429,9 +423,8 @@ while(std::cin.getline(name, sizeof(name))) // със cin.getline() автома
 std::ifstream myFile("myFile.txt");
 
 char name[10];
-while(myFile.getline(name, sizeof(name))) // чете се ред, докато може (т.е.
-                                          // докато не е достигнат края на файла
-{
+while (myFile.getline(name, sizeof(name))) { // чете се ред, докато може (т.е.
+                                             // докато не е достигнат края на файла
     std::cout << name << std::endl;
 }
 
@@ -467,8 +460,7 @@ myFile.ignore(); // за да прескочим този символ, изпо
                  // символа '\n', което ще се вижда като празно място на екрана
 char name[10];
 int i = 0;
-while(i < number && myFile.getline(name, sizeof(name)))
-{
+while (i < number && myFile.getline(name, sizeof(name))) {
     std::cout << name << std::endl;
 }
 
