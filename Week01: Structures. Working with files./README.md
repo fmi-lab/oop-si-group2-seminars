@@ -476,8 +476,8 @@ myFile << "Amanda" << std::endl;
 ```
 
 За навигация във файлове и работа с двоични файлове -> [Седмица 2: Двоични
-файлове. Навигация във файлове. Класове.](../Week 2: Binary Files. Navigation in
-Files. Classes.)
+файлове. Навигация във файлове. Класове.](../Week02: Binary Files. Positioning in
+Files./README.md)
 
 ## Задачи
 
