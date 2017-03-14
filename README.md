@@ -9,8 +9,8 @@
 1. [[2017-02-20] Структури. Работа с файлове.](./Week01: Structures. Working with files./README.md)
 1. [[2017-02-28] Двоични файлове. Позициониране във файлове.](./Week02: Binary files. Positioning in files./README.md)
 1. [[2017-03-06] Шаблони на функции. Указатели към функции.](./Week03: Function templates. Pointers to functions./README.md)
-1. [[2017-03-13] Класове. Голямата четворка. Предефиниране на оператори](./Week04: Classes. The Big Four. Overloading operators./README.md)
-1. [2017-03-27]
+1. [[2017-03-13] Класове. Предефиниране на оператори.](./Week04: Classes. Overloading operators./README.md)
+1. [[2017-03-27] Класове с динамични член-данни. Канонично представяне.](./Week05: Classes with dynamic fields. Canonical classes./README.md)
 1. [2017-04-03]
 1. [2017-04-10]
 1. ? [2017-04-17]
@@ -35,6 +35,8 @@
 
 За всеки с над 180т., ~~ще бъде направено съгласуване и с хората водещи практикума~~ и евентуално препоръчан на преподавателя за асистент следващия семестър.
 
+Пращайте ми домашни на: meftimova@uni-sofia.bg
+
 #### Оценка
 Отделна оценка от семинар няма да има.
 
@@ -43,8 +45,11 @@
 
 Ще има задача за 3 в края на семестъра, след това ще има задача за 4/5. За 6 ще е необходима разработка на проект. Питайте за подробности и дати на лекциите.
 
+[Схема за оценяване](https://docs.google.com/document/d/1zmwYq-6jSpMua7r8xhJF0fhi5n_5dv-ol510tgUY7aU)
+
 ## Помощни материали
 
+* [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 * [C++ Programming Style Guidelines](http://geosoft.no/development/cppstyle.html)
 
 --
