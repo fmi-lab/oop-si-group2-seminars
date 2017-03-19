@@ -6,17 +6,18 @@
 
 ## План
 
-1. [[2017-02-20] Структури. Работа с файлове.](./Week01: Structures. Working with files./README.md)
-1. [[2017-02-28] Двоични файлове. Позициониране във файлове.](./Week02: Binary files. Positioning in files./README.md)
-1. [[2017-03-06] Шаблони на функции. Указатели към функции.](./Week03: Function templates. Pointers to functions./README.md)
-1. [[2017-03-13] Класове. Предефиниране на оператори.](./Week04: Classes. Overloading operators./README.md)
-1. [[2017-03-27] Класове с динамични член-данни. Канонично представяне.](./Week05: Classes with dynamic fields. Canonical classes./README.md)
+1. [2017-02-20: Структури. Работа с файлове.](./Week01: Structures. Working with files./README.md)
+1. [2017-02-28: Двоични файлове. Позициониране във файлове.](./Week02: Binary files. Positioning in files./README.md)
+1. [2017-03-06: Шаблони на функции. Указатели към функции.](./Week03: Function templates. Pointers to functions./README.md)
+1. [2017-03-13: Класове. Предефиниране на оператори.](./Week04: Classes. Overloading operators./README.md)
+1. [2017-03-20: Класове с динамични член-данни. Канонично представяне.](./Week05: Classes with dynamic fields. Canonical representation./README.md)
+1. [2017-03-27]
 1. [2017-04-03]
-1. [2017-04-10]
-1. ? [2017-04-17]
+1. [2017-04-10] --> [2017-04-11]
+1. ? [2017-04-17] --> [2017-03-22]
 1. [2017-04-24]
-1. ? [2017-05-01]
-1. [2017-05-08]
+1. ? [2017-05-01] --> [2017-05-02]
+1. ? [2017-05-08] --> [2017-05-09]
 1. [2017-05-15]
 1. [2017-05-22]
 1. [2017-05-29]
