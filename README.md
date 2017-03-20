@@ -6,11 +6,11 @@
 
 ## План
 
-1. [2017-02-20: Структури. Работа с файлове.](./Week01: Structures. Working with files./README.md)
-1. [2017-02-28: Двоични файлове. Позициониране във файлове.](./Week02: Binary files. Positioning in files./README.md)
-1. [2017-03-06: Шаблони на функции. Указатели към функции.](./Week03: Function templates. Pointers to functions./README.md)
-1. [2017-03-13: Класове. Предефиниране на оператори.](./Week04: Classes. Overloading operators./README.md)
-1. [2017-03-20: Класове с динамични член-данни. Канонично представяне.](./Week05: Classes with dynamic fields. Canonical representation./README.md)
+1. [[2017-02-20] Структури. Работа с файлове.](https://github.com/fmi-lab/oop-si-group2-seminars/tree/master/Week01:%20Structures.%20Working%20with%20files./README.md)
+1. [[2017-02-28] Двоични файлове. Позициониране във файлове.](https://github.com/fmi-lab/oop-si-group2-seminars/tree/master/Week02:%20Binary%20files.%20Positioning%20in%20files./README.md)
+1. [[2017-03-06] Шаблони на функции. Указатели към функции.](https://github.com/fmi-lab/oop-si-group2-seminars/tree/master/Week03:%20Function%20templates.%20Pointers%20to%20functions./README.md)
+1. [[2017-03-13] Класове. Предефиниране на оператори.](https://github.com/fmi-lab/oop-si-group2-seminars/tree/master/Week04:%20Classes.%20Overloading%20operators./README.md)
+1. [[2017-03-20] Класове с динамични член-данни. Канонично представяне.](https://github.com/fmi-lab/oop-si-group2-seminars/tree/master/Week05:%20Classes%20with%20dynamic%20fields.%20Canonical%20representation./README.md)
 1. [2017-03-27]
 1. [2017-04-03]
 1. [2017-04-10] --> [2017-04-11]
