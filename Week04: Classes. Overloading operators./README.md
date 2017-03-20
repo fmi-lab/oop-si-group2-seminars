@@ -1,4 +1,4 @@
-# Седмица 4: Класове. Голямата четворка. Предефиниране на оператори.
+# Седмица 4: Класове. Предефиниране на оператори.
 *13.03.2017*
 
 ## План
@@ -114,9 +114,8 @@ Guidelines](http://www.umich.edu/~eecs381/handouts/CppHeaderFileGuidelines.pdf)
 *Забележка:* При шаблонните класове има особеност при разделянето на интерфейса
 от имплементацията: [Why can’t I separate the definition of my templates class
 from its declaration and put it inside a .cpp
-file?](https://isocpp.org/wiki/faq/templates#templates-defn-vs-decl). Често
-използвано решение е да се използва файл с разширение .tpp за имплементацията и
-той да бъде включен в края на заглавния файл.
+file?](https://isocpp.org/wiki/faq/templates#templates-defn-vs-decl). Обикновено
+цялата реализация на този клас се държи в заглавния файл.
 
 ### Спецификатори за достъп
 [**^ План**](#План)
