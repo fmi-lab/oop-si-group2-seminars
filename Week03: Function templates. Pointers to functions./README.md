@@ -1,5 +1,5 @@
 # Седмица 3: Шаблонни функции. Функции от по-висок ред.
-*07.03.2017*
+*06.03.2017*
 
 ## План
 
@@ -8,6 +8,7 @@
 * [Задачи](#Задачи)
 
 ## Шаблонни-функции
+[**^ План**](#План)
 
 Шаблоните се използват при еднакви по функционалност, но различими по тип, който
 приемат или връщат, функции.
@@ -17,11 +18,11 @@
 void printArray (int* array, size_t size) {
     std::cout << "{";
 
-    if (size > 0) {
-        for (size_t i = 0; i < size - 1; i++) {
-            std::cout << " " << array[i] << ",";
-        }
+    for (size_t i = 0; i < size - 1; i++) {
+        std::cout << " " << array[i] << ",";
+    }
 
+    if (size > 0) {
         std::cout << " " << array[size - 1] << " ";
     }
 
@@ -39,11 +40,11 @@ template <typename T>
 void printArray (T* array, size_t size) {
     std::cout << "{";
 
-    if (size > 0) {
-        for (size_t i = 0; i < size - 1; i++) {
-            std::cout << " " << array[i] << ",";
-        }
+    for (size_t i = 0; i < size - 1; i++) {
+        std::cout << " " << array[i] << ",";
+    }
 
+    if (size > 0) {
         std::cout << " " << array[size - 1] << " ";
     }
 
@@ -59,24 +60,15 @@ void printArray (T* array, size_t size) {
 
 *Пример:*
 ```cpp
-#include <iostream>
+int intArray[] = { 1, 2, 5, 10 };
+double doubleArray[] = { 2.5, -9.3 };
+char charArray[] = "Rick";
+char* stringArray[] = { "Wubba", "lubba", "dub", "dub" };
 
-...
-
-int main() {
-
-    int intArray[] = { 1, 2, 5, 10 };
-    double doubleArray[] = { 2.5, -9.3 };
-    char charArray[] = "Rick";
-    char* stringArray[] = { "Wubba", "lubba", "dub", "dub" };
-
-    printArray(intArray, sizeof(intArray) / sizeof(int));
-    printArray(doubleArray, sizeof(doubleArray) / sizeof(double));
-    printArray(charArray, sizeof(charArray) / sizeof(char));
-    printArray(stringArray, sizeof(stringArray) / sizeof(char*));
-
-    return 0;
-}
+printArray(intArray, sizeof(intArray) / sizeof(int));
+printArray(doubleArray, sizeof(doubleArray) / sizeof(double));
+printArray(charArray, sizeof(charArray) / sizeof(char));
+printArray(stringArray, sizeof(stringArray) / sizeof(char*));
 ```
 
 С една функция можете да изведете на екрана съдържанието на най-различни по тип
@@ -108,5 +100,59 @@ Stroustrup](https://en.wikipedia.org/wiki/Bjarne_Stroustrup) (създателя
 Ще използваме за шаблони `template <typename T>`.
 
 ## Функции от по-висок ред
+[**^ План**](#План)
+
+Името на функция по принцип е константен указател, сочещ към първата машинна
+инструкция от изпълнимия ѝ машинен код.
+
+Функции от по-висок ред са такива функции, които имат като формален параметър
+или връщат като резултат указател към друга функция. Подобни функции се
+използват много при функционалните езици, ще се запознате с такива в курса по
+„Функционално програмиране“.
+
+Обикновено функции с минимални разлики и подобна семантика могат да се обединят
+в една, с допълнителен параметър функция извършваща необходимите действия в
+блока, където е било различието.
+
+Да речем че искам да приложа някаква функция върху масив от целочислени
+стойности. Това може да стане по следния начин.
+
+*Пример:*
+```cpp
+void apply(int* input, size_t size, int (*manipulator)(int)) {
+    for (size_t i = 0; i < size; i++) {
+        input[i] = manipulator(input[i]);
+    }
+}
+```
+След, което само остава да дефинирам няколко функции, които да могат да бъдат
+подадени като аргумент на `apply`.
+
+*Пример:*
+```cpp
+int increment(int a) {
+    return ++a;
+}
+
+int decrement(int a) {
+    return --a;
+}
+
+int main() {
+    int intArray = { 1, 5, 2, 8 };
+    size_t sizeOfIntArray = sizeof(intArray) / sizeof(int);
+    apply(intArray, sizeOfIntArray, increment);
+    printArray(intArray, sizeOfIntArray); // Ще изведе { 2, 6, 3, 9 }
+
+    return 0;
+}
+```
 
 ## Задачи
+[**^ План**](#План)
+
+1. Дадена е квадратна матрица A от произволен тип. Да се дефинира функция от
+   по-висок ред, която прилага едноаргументна функция f над елементите на всеки
+   ред на A с четен пореден номер и едноаргументна функция g над елементите на
+   всеки ред на A с нечетен пореден номер.
+
